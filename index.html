@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>我的圖片 App</title>
+
+  <!-- PWA -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Apple Web App 必須 -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="我的圖片">
+
+  <link rel="apple-touch-icon" href="icon-192.png">
+
+  <style>
+    html, body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      background: black;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: over; /* 改成 cover 就是滿版裁切 */
+    }
+  </style>
+</head>
+<body>
+  <img src="image.jpg" alt="我的圖片">
+</body>
+</html>
